@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PT Meksiko Management System</title>
+    <title>Alexandria Library</title>
     <!-- Google Fonts : Ubuntu -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +17,17 @@
 <body>
     <div class="container">
         <div class="sidebar">
-
+            <div id="bar-button">
+                <input type="checkbox" id="bar-checkbox">
+                <label for="bar-checkbox" id="checkbox-label">
+                    <div id="burger"></div>
+                </label>
+            </div>
             <div class="bar-upper">
 
                 <div class="upper-title">
                     <a href="/">
-                        <img src="/images/maracas.png" alt="maracas icon">
-                        <span>PT Meksiko</span>
+                        <span>Alexandria Library</span>
                     </a>
                 </div>
 
@@ -35,16 +39,16 @@
 
             <div class="bar-lower">
                 <div class="nav-list">
-                    <a href="/" id="Dashboard">
-                        <img src="images/dashboard_icon.png" alt="Dashboard Icon">
-                        <span>Dashboard</span>
+                    <a href="/" id="Home">
+                        <img src="images/home_icon.png" alt="Home Icon">
+                        <span>Home</span>
                     </a>
-    
+
                     <a href="/view" id="View">
                         <img src="images/view_icon.png" alt="View Icon">
                         <span>View</span>
                     </a>
-    
+
                     <a href="/add" id="Add">
                         <img src="images/add_icon.png" alt="Add icon">
                         <span>Add</span>
@@ -56,13 +60,8 @@
         </div>
 
         <div class="content">
-            <div id="bar-button">
-                <input type="checkbox" id="bar-checkbox">
-                <label for="bar-checkbox" id="checkbox-label">
-                    <div id="burger"></div>
-                </label>
-            </div>
             <div class="form">
+                <h1>Edit Karyawan</h1>
                 <form action="{{route('updateKaryawan', ['id' => $karyawan->id])}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('patch')
@@ -111,7 +110,7 @@
         </div>
     </div>
     <footer>
-        <p>© 2023 PT. Meksiko</p>
+        <p>© 2023 Alexandria Library</p>
     </footer>
     <script src="js/script.js"></script>
 </body>

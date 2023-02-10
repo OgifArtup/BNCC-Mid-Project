@@ -22,6 +22,10 @@ Route::get('/view', function () {
     return view('view');
 });
 
+Route::get('/edit', function () {
+    return view('edit');
+});
+
 Route::get('/add', [KaryawanController::class, 'add'])->name('getAdd');
 Route::post('/create-karyawan', [KaryawanController::class, 'createKaryawan']);
 

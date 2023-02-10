@@ -26,6 +26,7 @@ class KaryawanController extends Controller
     {
         return view('add');
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -117,10 +118,6 @@ class KaryawanController extends Controller
      * @param  \App\Models\karyawan  $karyawan
      * @return \Illuminate\Http\Response
      */
-    public function edit(karyawan $karyawan)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
