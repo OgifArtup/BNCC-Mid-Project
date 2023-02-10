@@ -1,5 +1,5 @@
 # Split-Inator
-Nama : Figo Putra Mahawangsa
+Nama : Figo Putra Mahawangsa 
 BNCC ID : BNCC2201295
 
 BNCC-Mid-Project ini merupakan projek back-end website yang telah saya buat untuk Mid Projek BNCC LnT saya. Website yang sata telah buat merupakan sebuah mock website untuk sebuah perpustakaan yang saya beri nama "Alexandria Library"
