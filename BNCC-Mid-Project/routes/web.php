@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KaryawanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/view', function () {
+    return view('view');
+});
+
+Route::get('/add', [KaryawanController::class, 'add'])->name('getAdd');
+Route::post('/create-karyawan', [KaryawanController::class, 'createKaryawan']);
+
+Route::get('/view', [KaryawanController::class, 'getKaryawan'])->name('getKaryawan');
+
+Route::get('/update-karyawan/{id}', [KaryawanController::class, 'getKaryawanById'])->name('getKaryawanById');
+Route::patch('/update-karyawan/{id}', [KaryawanController::class, 'updateKaryawan'])->name('updateKaryawan');
+
+Route::delete('/delete-karyawan/{id}', [KaryawanController::class, 'deleteKaryawan'])->name('delete');

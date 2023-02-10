@@ -20,7 +20,7 @@
             <div class="bar-upper">
 
                 <div class="upper-title">
-                    <a href="#">
+                    <a href="/">
                         <img src="/images/maracas.png" alt="maracas icon">
                         <span>PT Meksiko</span>
                     </a>
@@ -34,17 +34,17 @@
 
             <div class="bar-lower">
                 <div class="nav-list">
-                    <a href="#">
+                    <a href="/" id="Dashboard">
                         <img src="images/dashboard_icon.png" alt="Dashboard Icon">
                         <span>Dashboard</span>
                     </a>
     
-                    <a href="#">
+                    <a href="/view" id="View">
                         <img src="images/view_icon.png" alt="View Icon">
                         <span>View</span>
                     </a>
     
-                    <a href="#">
+                    <a href="/add" id="Add">
                         <img src="images/add_icon.png" alt="Add icon">
                         <span>Add</span>
                     </a>
@@ -61,6 +61,8 @@
                     <div id="burger"></div>
                 </label>
             </div>
+
+            
         </div>
     </div>
     <footer>
