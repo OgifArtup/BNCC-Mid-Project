@@ -64,7 +64,7 @@ class KaryawanController extends Controller
         ]);
 
         $karyawan -> update([
-            'Name' => $request->Name,
+            'Nama' => $request->Nama,
             'Umur' => $request->Umur,
             'Alamat' => $request->Alamat,
             'NomorTelp' => $request->NomorTelp,

@@ -27,7 +27,7 @@ Route::post('/create-karyawan', [KaryawanController::class, 'createKaryawan']);
 
 Route::get('/view', [KaryawanController::class, 'getKaryawan'])->name('getKaryawan');
 
-Route::get('/update-karyawan/{id}', [KaryawanController::class, 'getKaryawanById'])->name('getKaryawanById');
+Route::get('/update-karyawan/{id}', [KaryawanController::class, 'getKaryawanById'])->name('KaryawanController');
 Route::patch('/update-karyawan/{id}', [KaryawanController::class, 'updateKaryawan'])->name('updateKaryawan');
 
 Route::delete('/delete-karyawan/{id}', [KaryawanController::class, 'deleteKaryawan'])->name('delete');

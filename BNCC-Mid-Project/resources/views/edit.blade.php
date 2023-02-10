@@ -12,8 +12,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/add.css">
 </head>
 <body>
     <div class="container">
@@ -63,56 +62,51 @@
                     <div id="burger"></div>
                 </label>
             </div>
-
-            <div class="container col-md-6" style="padding-top: 20px">
-                <div class="card shadow">
-                <div class="card-header text-center"></div>
-                <div class="card-body">
-                    <form action="{{route('updateKaryawan', ['id' => $karyawan->id])}}" method="POST" enctype="multipart/form-data">
-                        @csrf
-                        @method('patch')
-                        <div class="mb-3">
-                            <label for="Nama" class="form-label">Nama</label>
-                            <input name="Nama" type="text" value="{{$karyawan->Nama}}" class="form-control" id="formGroupExampleInput" placeholder="Input Nama Lengkap Anda">
-                            @error('Nama')
-                                <div class="text-danger">
-                                    {{ $message }}
-                                </div>
-                            @enderror
-                        </div>
-        
-                        <div class="mb-3">
-                            <label for="Umur" class="form-label">Umur</label>
-                            <input name="Umur" type="numeric" value="{{$karyawan->Umur}}" class="form-control" id="formGroupExampleInput" placeholder="Input Umur Anda">
-                            @error('Umur')
+            <div class="form">
+                <form action="{{route('updateKaryawan', ['id' => $karyawan->id])}}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @method('patch')
+                    <div class="mb-3">
+                        <label for="Nama" class="form-label">Nama</label>
+                        <input name="Nama" type="text" value="{{$karyawan->Nama}}" class="form-control" id="formGroupExampleInput" placeholder="Input Nama Lengkap Anda">
+                        @error('Nama')
                             <div class="text-danger">
                                 {{ $message }}
                             </div>
-                            @enderror
+                        @enderror
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="Umur" class="form-label">Umur</label>
+                        <input name="Umur" type="numeric" value="{{$karyawan->Umur}}" class="form-control" id="formGroupExampleInput" placeholder="Input Umur Anda">
+                        @error('Umur')
+                        <div class="text-danger">
+                            {{ $message }}
                         </div>
-                        <div class="mb-3">
-                            <label for="Alamat" class="form-label">Alamat</label>
-                            <input name="Alamat" type="text" value="{{$karyawan->Alamat}}" class="form-control" id="formGroupExampleInput" placeholder="Input Alamat Anda">
-                            @error('Alamat')
-                            <div class="text-danger">
-                                {{ $message }}
-                            </div>
-                            @enderror
+                        @enderror
+                    </div>
+                    <div class="mb-3">
+                        <label for="Alamat" class="form-label">Alamat</label>
+                        <input name="Alamat" type="text" value="{{$karyawan->Alamat}}" class="form-control" id="formGroupExampleInput" placeholder="Input Alamat Anda">
+                        @error('Alamat')
+                        <div class="text-danger">
+                            {{ $message }}
                         </div>
-                        <div class="mb-3">
-                            <label for="NomorTelp" class="form-label">Nomor Telepon</label>
-                            <input name="NomorTelp" type="text" value="{{$karyawan->NomorTelp}}" class="form-control" id="formGroupExampleInput" placeholder="Input Nomor Telepon Anda">
-                            @error('NomorTelp')
-                            <div class="text-danger">
-                                {{ $message }}
-                            </div>
-                            @enderror
+                        @enderror
+                    </div>
+                    <div class="mb-3">
+                        <label for="NomorTelp" class="form-label">Nomor Telepon</label>
+                        <input name="NomorTelp" type="text" value="{{$karyawan->NomorTelp}}" class="form-control" id="formGroupExampleInput" placeholder="Input Nomor Telepon Anda">
+                        @error('NomorTelp')
+                        <div class="text-danger">
+                            {{ $message }}
                         </div>
-                        <div class="card-body text-center">
-                            <button type="submit" class="btn btn-success">Update</button>
-                        </div>
-                    </form>
-                </div>
+                        @enderror
+                    </div>
+                    <div class="card-body text-center">
+                        <button type="submit" class="insertBttn">Update</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -121,10 +115,4 @@
     </footer>
     <script src="js/script.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-</script>
 </html>

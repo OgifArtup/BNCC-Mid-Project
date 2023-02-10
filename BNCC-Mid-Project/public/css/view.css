@@ -1,0 +1,63 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin:25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    padding: 25px;
+}
+
+.table {
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 25px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr{
+    background-color: #006343;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th, td{
+    padding: 12px 15px;
+}
+
+.table tbody tr{
+    border-bottom: 1px solid black;
+}
+
+.table tbody tr:nth-of-type(odd){
+    background-color: white;
+}
+
+.table tbody tr:nth-of-type(even){
+    background-color: aliceblue;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.editBttn, .deleteBttn {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.editBttn {
+    background: #009d4d;
+}
+
+.deleteBttn {
+    background: #c81025;
+}
