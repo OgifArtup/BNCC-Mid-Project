@@ -1,4 +1,4 @@
-# Split-Inator
+# BNCC-Mid-Project
 Nama : Figo Putra Mahawangsa 
 
 BNCC ID : BNCC2201295
